@@ -12,7 +12,7 @@ module Decodar
         end
       end
 
-      def self.specify_code(name, position, type, allow_blank = false)
+      def self.specify_code(name, position, type, allow_blank = true)
         code_reader(name)
         @specified_codes[name] = CodeSpecification.new(self.name, name, position, type, allow_blank)
       end
