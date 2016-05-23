@@ -39,7 +39,7 @@ module Decodar
       end
 
       def format_string(raw_code)
-        raw_code.strip
+        raw_code.scrub!.strip
       end
 
       def format_decimal(raw_code)
